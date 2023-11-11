@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-DollHack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <h3 class="chat-header">Chat en línea</h3>
+            <div class="professor-list">
+                <div class="professor">
+                    <div class="professor-img">
+                        <img src="img/user.jpg" alt="Professor 1">
+                        <div class="professor-status"></div>
+                    </div>
+                    <small>Profe 1</small>
+                </div>
+                <!-- Repite este bloque para cada profesor -->
+            </div>
+            <!--<div class="message-container">
+                 <div class="message">
+                  <img src="img/user.jpg" alt="Professor 1">
+                      <div class="message-content">
+                       <div class="flex mb-1">
+                <p class="font-medium flex-grow">Profe 1</p>
+                <small class="message-time">09:55 am</small>
+            </div>
+            <p>Esto es un mensaje importante.</p>
+            </div>--><!-- Aquí se mostrarán los mensajes -->
+            
+        </div>
+        <div class="chat-content">
+            <div class="professor-info">
+                <div class="professor-img">
+                    <img src="img/user.jpg" alt="Professor 1">
+                </div>
+                <div class="professor-details">
+                    <p class="font-medium">Profe 1</p>
+                    <small class="text-gray-500">Online/Offline</small>
+                </div>
+            </div>
+            <div class="message-container">
+                <!-- Aquí se mostrarán los mensajes -->
+            </div>
+            <div class="message-input-container">
+                <div class="message-input-wrapper">
+                    <input type="text" class="message-input" placeholder="Escribe tu mensaje...">
+                    <div class="send-button" onclick="sendMessage()">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                        </svg>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                </div>
+                 <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+

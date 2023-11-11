@@ -1,0 +1,122 @@
+/* Reset de márgenes y padding para el cuerpo y todos los elementos */
+body, h1, h2, h3, h4, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para la sección principal */
+.container {
+    display: flex;
+    height: 100vh; /* Hacemos que la sección ocupe toda la altura de la ventana */
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    background-color: #4B5563;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 25%;
+    overflow-y: auto;
+}
+
+.chat-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.professor-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.professor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.professor-img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Estilos para el contenido del chat */
+.chat-content {
+    flex: 1;
+    background-color: #E5E7EB;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Estilos para la información del profesor en el chat */
+.professor-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.professor-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Estilos para los mensajes */
+.message {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-content .flex {
+    margin-bottom: 5px;
+}
+
+.message-content .message-time {
+    margin-left: auto;
+}
+
+/* Estilos para el área de entrada de mensajes */
+.message-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #B0B0B0;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Estilos para los iconos dentro del botón de enviar */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
